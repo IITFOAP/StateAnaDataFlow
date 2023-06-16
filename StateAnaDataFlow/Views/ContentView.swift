@@ -23,6 +23,7 @@ struct ContentView: View {
             Spacer()
             
             ButtonStartView(timer: timer)
+                .padding(8)
             ButtonLogoutView()
             
             Spacer()
