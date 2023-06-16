@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2C2CBA102A3B9059007FD20D /* ButtonLogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2CBA0F2A3B9059007FD20D /* ButtonLogoutView.swift */; };
+		2CD533192A3CD3B4003DEDAD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD533182A3CD3B4003DEDAD /* StorageManager.swift */; };
 		A88811522A3A1FFC00A4487D /* StateAnaDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811512A3A1FFC00A4487D /* StateAnaDataFlowApp.swift */; };
 		A88811542A3A1FFC00A4487D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811532A3A1FFC00A4487D /* ContentView.swift */; };
 		A88811562A3A1FFD00A4487D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88811552A3A1FFD00A4487D /* Assets.xcassets */; };
 		A88811592A3A1FFD00A4487D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88811582A3A1FFD00A4487D /* Preview Assets.xcassets */; };
 		A88811602A3A388800A4487D /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888115F2A3A388800A4487D /* TimeCounter.swift */; };
 		A88811622A3A3F0100A4487D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811612A3A3F0100A4487D /* LoginView.swift */; };
-		A88811642A3A3FE800A4487D /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811632A3A3FE800A4487D /* UserSettings.swift */; };
 		A88811662A3A411000A4487D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811652A3A411000A4487D /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C2CBA0F2A3B9059007FD20D /* ButtonLogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLogoutView.swift; sourceTree = "<group>"; };
+		2CD533182A3CD3B4003DEDAD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A888114E2A3A1FFC00A4487D /* StateAnaDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAnaDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88811512A3A1FFC00A4487D /* StateAnaDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAnaDataFlowApp.swift; sourceTree = "<group>"; };
 		A88811532A3A1FFC00A4487D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		A88811582A3A1FFD00A4487D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A888115F2A3A388800A4487D /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		A88811612A3A3F0100A4487D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		A88811632A3A3FE800A4487D /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		A88811652A3A411000A4487D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +42,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CD533132A3CC556003DEDAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A88811532A3A1FFC00A4487D /* ContentView.swift */,
+				A88811612A3A3F0100A4487D /* LoginView.swift */,
+				A88811652A3A411000A4487D /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CD533142A3CC571003DEDAD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				2C2CBA0F2A3B9059007FD20D /* ButtonLogoutView.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2CD533152A3CC5A6003DEDAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A88811552A3A1FFD00A4487D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CD533162A3CC5E9003DEDAD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A888115F2A3A388800A4487D /* TimeCounter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2CD533172A3CC606003DEDAD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A88811512A3A1FFC00A4487D /* StateAnaDataFlowApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2CD5331A2A3CD3C2003DEDAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2CD533182A3CD3B4003DEDAD /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		A88811452A3A1FFC00A4487D = {
 			isa = PBXGroup;
 			children = (
@@ -61,14 +111,12 @@
 		A88811502A3A1FFC00A4487D /* StateAnaDataFlow */ = {
 			isa = PBXGroup;
 			children = (
-				A88811512A3A1FFC00A4487D /* StateAnaDataFlowApp.swift */,
-				A88811532A3A1FFC00A4487D /* ContentView.swift */,
-				A88811612A3A3F0100A4487D /* LoginView.swift */,
-				A88811652A3A411000A4487D /* RootView.swift */,
-				A888115F2A3A388800A4487D /* TimeCounter.swift */,
-				A88811632A3A3FE800A4487D /* UserSettings.swift */,
-				2C2CBA0F2A3B9059007FD20D /* ButtonLogoutView.swift */,
-				A88811552A3A1FFD00A4487D /* Assets.xcassets */,
+				2CD5331A2A3CD3C2003DEDAD /* Managers */,
+				2CD533172A3CC606003DEDAD /* App */,
+				2CD533132A3CC556003DEDAD /* Views */,
+				2CD533162A3CC5E9003DEDAD /* Helpers */,
+				2CD533142A3CC571003DEDAD /* New Group */,
+				2CD533152A3CC5A6003DEDAD /* Resources */,
 				A88811572A3A1FFD00A4487D /* Preview Content */,
 			);
 			path = StateAnaDataFlow;
@@ -156,9 +204,9 @@
 				A88811542A3A1FFC00A4487D /* ContentView.swift in Sources */,
 				A88811662A3A411000A4487D /* RootView.swift in Sources */,
 				A88811622A3A3F0100A4487D /* LoginView.swift in Sources */,
-				A88811642A3A3FE800A4487D /* UserSettings.swift in Sources */,
 				A88811522A3A1FFC00A4487D /* StateAnaDataFlowApp.swift in Sources */,
 				2C2CBA102A3B9059007FD20D /* ButtonLogoutView.swift in Sources */,
+				2CD533192A3CD3B4003DEDAD /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

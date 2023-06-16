@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var timer = TimeCounter()
-    @EnvironmentObject private var user: UserSettings
+    @StateObject private var user = StorageManager.shared
     
     var body: some View {
         VStack {
@@ -33,7 +33,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(UserSettings())
+            .environmentObject(StorageManager.shared)
     }
 }
 

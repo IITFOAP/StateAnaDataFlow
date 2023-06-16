@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ButtonLogoutView: View {
-    @EnvironmentObject private var user: UserSettings
+    @StateObject private var user = StorageManager.shared
     
     var body: some View {
         Button(action: logout) {

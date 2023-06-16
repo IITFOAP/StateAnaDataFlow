@@ -11,7 +11,7 @@ struct LoginView: View {
     @State private var name = ""
     @State private var color = Color(.red)
     @State private var isButtonDisable = true
-    @EnvironmentObject private var user: UserSettings
+    @StateObject private var user = StorageManager.shared
     
     private var count: Int {
         return name.filter{ $0.isLetter }.count
